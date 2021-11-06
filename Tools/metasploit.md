@@ -1,7 +1,9 @@
 # MetaSploit
 
 ## Initialize
-- Database settings: ```systemctl start postgresql``` & ```msfdb init```
+- Database settings: 
+  - ```systemctl start postgresql```
+  - ```msfdb init```
 - Run: ```msfconsole```  
 - Workspace
   - Create: ```workspace -a nasa``` 
