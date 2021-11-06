@@ -11,13 +11,15 @@
 - Go to a workspace: ``` workspace nasa```
 
 ## Search
-```
-search type:exploit cve:2019
-search type:auxiliary cve:2019
-search platform:windows description:chrome
-search platform:android description:2019
-search platform:exploit description:samsung
-```
+- Example
+  - ```search type:exploit cve:2019```
+  - ```search type:auxiliary cve:2019```
+  - ```search platform:windows description:chrome```
+  - ```search platform:android description:2019```
+  - ```search platform:exploit description:samsung```
+- Nmap
+  - ```nmap -sV -oX output.xml 192.168.3.5```
+  - ```searchsploit --nmap output.xml```
 
 ## Auxiliary
 - Example
@@ -70,7 +72,3 @@ search platform:exploit description:samsung
   - ```ps```
   - ```migrate 596```
     - 596 is PID of service.exe - DLL Hijack for persistant
-
-Input from nmap
-- ```nmap -sV -oX output.xml 192.168.3.5```
-- ```searchsploit --nmap output.xml```
