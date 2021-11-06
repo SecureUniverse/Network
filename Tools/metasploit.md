@@ -4,7 +4,8 @@
 - Database settings: 
   - ```systemctl start postgresql```
   - ```msfdb init```
-- Run: ```msfconsole```  
+- Run
+  - ```msfconsole```  
 - Workspace
   - Create: ```workspace -a nasa``` 
   - Delete: ```workspace -d nsa```
