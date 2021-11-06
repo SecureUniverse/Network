@@ -19,11 +19,16 @@ search platform:android description:2019
 search platform:exploit description:samsung
 ```
 
+## Auxiliary
+```use  auxiliary/scanner/mongodb/mongodb_login```
+```set rhosts 192.168.1.0/24```
+```run```
 
 
+## Exploit
 
 
-
+## Meterprete
 
 
 Input from nmap
