@@ -2,8 +2,13 @@
 
 ## Default Ports
 ```cat /opt/nessus/var/nessus/nessus-service | wc```
-
 New Scan -> Advanced Scan -> Settings -> DISCOVERY -> Port Scanning -> Ports: Port scan range
+
+## Run
+```
+cd /opt/nessus/sbin
+./nessusd
+```
 
 ## Aggressive Scan
 - New Scan / Advanced Scan
