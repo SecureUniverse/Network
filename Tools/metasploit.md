@@ -3,12 +3,11 @@
 ## Initialize
 - Database settings: ```systemctl start postgresql``` & ```msfdb init```
 - Run: ```msfconsole```  
-
-## Workspace
-- Create: ```workspace -a nasa``` 
-- Delete: ```workspace -d nsa```
-- Show: ```workspace```  
-- Go to a workspace: ``` workspace nasa```
+- Workspace
+  - Create: ```workspace -a nasa``` 
+  - Delete: ```workspace -d nsa```
+  - Show: ```workspace```  
+  - Go to a workspace: ``` workspace nasa``` 
 
 ## Search
 - Example
