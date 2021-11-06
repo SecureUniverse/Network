@@ -118,7 +118,7 @@
      
      
 ## Pivot
-- Find a network interface with a different address from current subnet with ```ifconfig```
+- On victim, find a network interface with a different address from current subnet with ```ifconfig```
 - Create a route between hacker and new victim
   - ```use post/windows/manage/autoroute```
   - ```set SESSION 1
