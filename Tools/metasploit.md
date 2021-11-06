@@ -30,6 +30,9 @@ search platform:exploit description:samsung
 - Change default payload
   - ```show payloads``` 
   - ```set payload windows/meterpreter/reverse_tcp```
+- Change targets
+  - ```show targets```
+  - ```set target 1```
 
 ## Meterprete
 
