@@ -10,7 +10,14 @@
 - Show: ```workspace```  
 - Go to a workspace: ``` workspace nasa```
 
-
+## Search
+```
+search type:exploit cve:2019
+search type:auxiliary cve:2019
+search platform:windows description:chrome
+search platform:android description:2019
+search platform:exploit description:samsung
+```
 
 
 
