@@ -11,6 +11,9 @@
   - Delete: ```workspace -d nsa```
   - Show: ```workspace```  
   - Go to a workspace: ``` workspace nasa``` 
+- Session
+  - ```sessions -l```
+  - ```sessions -i 2```  
 
 ## Search
 - Example
@@ -60,6 +63,8 @@
   - ```netstat```
   - ```keyscan_start``` & ```keyscan_dump``` & ```keyscan_stop```
   - ```getuid```
+  - ```sysinfo```
+  - ```ipconfig```
 - Mimikatz
   - ```load mimikatz```
   - ```help```
@@ -75,7 +80,7 @@
 - Process & Migrate
   - ```ps```
   - ```migrate 596```
-    - 596 is PID of service.exe - DLL Hijack for persistant
+    - 596 is PID of *service.exe* or *explorer.exe* - DLL Hijack for persistant
 
 
 ## msfvenom (Android)
