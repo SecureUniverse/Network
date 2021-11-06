@@ -6,10 +6,7 @@
 New Scan -> Advanced Scan -> Settings -> DISCOVERY -> Port Scanning -> Ports: Port scan range
 
 ## Run
-```
-cd /opt/nessus/sbin
-./nessusd
-```
+```cd /opt/nessus/sbin``` & ```./nessusd```
 
 ## Aggressive Scan
 - New Scan / Advanced Scan
