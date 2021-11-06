@@ -14,6 +14,8 @@
 - Session
   - ```sessions -l```
   - ```sessions -i 2```  
+- Informaion of a module 
+  - ```info```  
 
 ## Search
 - Example
