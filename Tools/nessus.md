@@ -2,6 +2,7 @@
 
 ## Default Ports
 ```cat /opt/nessus/var/nessus/nessus-service | wc```
+
 New Scan -> Advanced Scan -> Settings -> DISCOVERY -> Port Scanning -> Ports: Port scan range
 
 ## Run
