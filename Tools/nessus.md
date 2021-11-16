@@ -57,7 +57,7 @@ New Scan -> Advanced Scan -> Settings -> DISCOVERY -> Port Scanning -> Ports: Po
      - ```touch /opt/nessus/var/nessus/plugin_feed_info.inc```
    - Open above files with nano and add these commands (first line is the data & time of install)
 ```
-PLUGIN_SET = "202110292034";
+PLUGIN_SET = "202108051247";
 PLUGIN_FEED = "ProfessionalFeed (Direct)";
 PLUGIN_FEED_TRANSPORT = "Tenable Network Security Lightning";
 ```  
